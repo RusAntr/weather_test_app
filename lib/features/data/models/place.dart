@@ -13,7 +13,7 @@ class Place extends PlaceEntity {
     required String name,
     Map<String, dynamic>? localNames,
     required String country,
-    required String state,
+    String? state,
   }) : super(
           lat: lat,
           lon: lon,

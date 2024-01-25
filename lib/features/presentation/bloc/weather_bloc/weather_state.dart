@@ -23,13 +23,13 @@ class WeatherLoading extends WeatherBlocState {
   const WeatherLoading();
 }
 
-/// Successful state of loaded booking data returns [WeatherEntity] object
+/// Successful state of loaded weather data returns [WeatherEntity] object
 class WeatherLoadedSuccessfully extends WeatherBlocState {
   const WeatherLoadedSuccessfully(WeatherEntity booking)
       : super(weatherEntity: booking);
 }
 
-/// Failed attempt at loading bookind data returns [DioException]
+/// Failed attempt at loading weather data returns [DioException]
 class WeatherLoadingError extends WeatherBlocState {
   const WeatherLoadingError(DioException error) : super(error: error);
 }

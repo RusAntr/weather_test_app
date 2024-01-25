@@ -17,14 +17,14 @@ class PlaceEntity extends Equatable {
   final String country;
 
   /// State of the found location
-  final String state;
+  final String? state;
   const PlaceEntity({
     required this.lat,
     required this.lon,
     required this.name,
     this.localNames,
     required this.country,
-    required this.state,
+    this.state,
   });
 
   @override
